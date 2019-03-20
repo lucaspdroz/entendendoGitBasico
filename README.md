@@ -6,4 +6,4 @@ Uma breve descrição sobre o seu projeto
 
 # Adicionando a URL de acesso para o site
 
-Site gerado pelo  Github Pages [GitHub Pages](https://lucaspdroz.github.io/entendendoGitBasico/)
+Site já na web pelo [GitHub Pages](https://lucaspdroz.github.io/entendendoGitBasico/)
