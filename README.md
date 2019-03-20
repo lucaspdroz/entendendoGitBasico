@@ -8,6 +8,6 @@ Uma breve descrição sobre o seu projeto
 
 Site já na web pelo [GitHub Pages](https://lucaspdroz.github.io/entendendoGitBasico/)
 
-# Documentando o Reade.md
+# Documentando o README.md
 
 [básico de sintaxe de formatação (en)](https://help.github.com/en/articles/basic-writing-and-formatting-syntax#links)
