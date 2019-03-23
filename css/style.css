@@ -9,16 +9,19 @@
 */
 
 :root {
+    /* Colors */
     --black: #000;
+    --white: #fff;
+    /* font sizes */
+    --small: 22px;
+    --medium: 70px;
+    --big: 89px;
 }
 
 body {
     margin: 0;
     padding: 0;
-}
-
-section {
-    height: 100vh;
+    font-family: Poppins;
 }
 
 #triangle-topright {
@@ -29,27 +32,27 @@ section {
     border-top: 90vh solid var(--black);
     border-left: 60vw solid transparent;
     position: absolute;
+    z-index: 0;
 }
 
 h1 {
-    font-family: Poppins;
     font-style: normal;
     font-weight: bold;
 }
 
 .main-title {
-    padding: 70px;
+    padding: var(--medium);
     margin-bottom: 21vh;
 }
 
-.title {
-    font-size: 89px;
+.big-title {
+    font-size: var(--big);
     line-height: normal;
     margin-top: -27px;
 }
 
 .sub-title {
-    font-size: 22px;
+    font-size: var(--small);
     line-height: normal;
     color: var(--black);
 }
@@ -65,6 +68,17 @@ h1 {
     margin-left: 87px;
 }
 
+.git-svg {
+    position: absolute;
+    right: 10vw;
+    top: 10vh;
+    z-index: 1;
+}
+
+.git-svg path {
+    fill: var(--white);
+}
+
 img .dev {
     width: 198px;
     border-radius: 100%;
@@ -73,12 +87,9 @@ img .dev {
 .devs {
     width: 500px;
     display: inline-flex;
-    /* float: left; */
 }
 
 .name {
-    font-family: Poppins;
-    font-style: normal;
     font-weight: bold;
     font-size: 22px;
     line-height: 28px;
@@ -92,7 +103,9 @@ img .dev {
         padding: 10vw;
         font-size: 15px;
     }
-  
+    .git-svg {
+        display: none;
+    }
     .offset-right {
         padding: 0;
         margin: 0;
@@ -105,7 +118,6 @@ img .dev {
         display: block;
         width: auto;
     }
-
     .user {
         margin: auto;
     }
