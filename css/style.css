@@ -1,6 +1,6 @@
 /* import de webfonts - Google fonts */
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700');
 
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700');
 /* 
     font-family: 'Poppins', sans-serif; 
     font-weight: 300;
@@ -8,13 +8,105 @@
     font-weight: 700;
 */
 
-
-body{
-    margin: 0;
-    padding: 0; 
+:root {
+    --black: #000;
 }
 
-img .dev{
+body {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    height: 100vh;
+}
+
+#triangle-topright {
+    top: 0;
+    width: 0;
+    right: 0;
+    height: 0;
+    border-top: 90vh solid var(--black);
+    border-left: 60vw solid transparent;
+    position: absolute;
+}
+
+h1 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.main-title {
+    padding: 70px;
+    margin-bottom: 21vh;
+}
+
+.title {
+    font-size: 89px;
+    line-height: normal;
+    margin-top: -27px;
+}
+
+.sub-title {
+    font-size: 22px;
+    line-height: normal;
+    color: var(--black);
+}
+
+.offset-right {
+    padding: 72px 0 0 0;
+    position: absolute;
+    margin: 23px 0 0 -134px;
+}
+
+.user {
+    width: 200px;
+    margin-left: 87px;
+}
+
+img .dev {
     width: 198px;
     border-radius: 100%;
+}
+
+.devs {
+    width: 500px;
+    display: inline-flex;
+    /* float: left; */
+}
+
+.name {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    color: var(--black);
+}
+
+@media screen and (min-width:200px) and (max-width:1052px) {
+    .main-title {
+        margin: 0;
+        padding: 10vw;
+        font-size: 15px;
+    }
+  
+    .offset-right {
+        padding: 0;
+        margin: 0;
+        position: relative;
+    }
+    #triangle-topright {
+        display: none;
+    }
+    .devs {
+        display: block;
+        width: auto;
+    }
+
+    .user {
+        margin: auto;
+    }
 }
