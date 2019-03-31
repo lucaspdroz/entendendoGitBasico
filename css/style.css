@@ -24,6 +24,10 @@ body {
     font-family: Poppins;
 }
 
+section {
+    padding-bottom: 10vh;
+}
+
 #triangle-topright {
     top: 0;
     width: 0;
@@ -44,7 +48,9 @@ h1 {
     padding: var(--medium);
     margin-bottom: 21vh;
 }
-
+.section-title{
+    text-align: center;
+}
 .big-title {
     font-size: var(--big);
     line-height: normal;
@@ -66,6 +72,10 @@ h1 {
 .user {
     width: 200px;
     margin-left: 87px;
+}
+
+.user p{
+    text-align: center;
 }
 
 .git-svg {
@@ -95,6 +105,20 @@ img .dev {
     line-height: 28px;
     text-align: center;
     color: var(--black);
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.steps .even {
+    text-align: left;
+    grid-column: 2;
+}
+
+.steps .odd{
+    grid-column: 3;
 }
 
 @media screen and (min-width:200px) and (max-width:1052px) {
